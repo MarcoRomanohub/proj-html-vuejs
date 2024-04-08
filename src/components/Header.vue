@@ -30,6 +30,7 @@ export default {
 
 <style lang="scss" scoped>
 header {
+  position: fixed;
   height: 110px;
   width: 100vw;
   background-color: var(--primary-color);

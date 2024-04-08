@@ -30,5 +30,61 @@ export const store = reactive({
       name: 'Purchase',
       link: '#'
     },
-  ]
+  ],
+  footerMenu: {
+
+    eduPrime: [
+      {
+        name: 'Request a website',
+        link: '#'
+      },
+      {
+        name: 'Browse Themes',
+        link: '#'
+      },
+      {
+        name: 'Payment options',
+        link: '#'
+      },
+      {
+        name: 'Support System',
+        link: '#'
+      },
+      {
+        name: 'Checkout',
+        link: '#'
+      },
+      {
+        name: 'Purchase Theme',
+        link: '#'
+      },
+    ],
+
+    networking: [
+      {
+        name: 'Purchase Theme',
+        link: '#'
+      },
+      {
+        name: 'Our Benefits',
+        link: '#'
+      },
+      {
+        name: 'Our Team',
+        link: '#'
+      },
+      {
+        name: 'Our Service',
+        link: '#'
+      },
+      {
+        name: 'Other Products',
+        link: '#'
+      },
+      {
+        name: 'My account',
+        link: '#'
+      },
+    ]
+  }
 })

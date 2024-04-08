@@ -11,8 +11,15 @@ export default {
 </script>
 
 <template>
+  <footer>
 
+  </footer>
 
 </template>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+footer {
+  height: 520px;
+  background-color: var(--primary-color);
+}
+</style>
