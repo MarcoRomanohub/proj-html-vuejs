@@ -16,6 +16,7 @@ export default {
 
   <Header />
   <Main />
+  <Footer />
 
 </template>
 
