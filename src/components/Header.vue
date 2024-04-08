@@ -19,8 +19,9 @@ export default {
       </div>
       <div class="menu d-flex ">
         <ul class=" d-flex ">
-          <li v-for="link in store.headerMenu"><a href="#">{{ link.name }}</a></li>
+          <li v-for="link in store.headerMenu"><a :href="link.link">{{ link.name }}</a></li>
         </ul>
+        <button class=" btn btn-secondary   ">VIEW COURSES</button>
       </div>
     </div>
   </header>
@@ -43,16 +44,25 @@ header {
   top: 10px;
 
   ul {
+    position: relative;
+    top: 15px;
     list-style: none;
 
     li {
-      margin-left: 2rem;
+      margin: 0 2rem;
     }
 
     a {
       color: white;
       text-decoration: none;
     }
+  }
+
+  .btn {
+    background-color: var(--yellow-btn);
+    border: none;
+    border-radius: 2rem;
+    padding: 1rem 1.8rem;
   }
 }
 </style>
