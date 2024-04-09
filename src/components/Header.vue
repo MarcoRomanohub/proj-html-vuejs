@@ -34,7 +34,7 @@ header {
   height: 110px;
   width: 100vw;
   background-color: var(--primary-color);
-
+  z-index: 999;
   .logo {
     width: 300px;
   }

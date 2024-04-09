@@ -7,9 +7,16 @@ export default {
 
 <template>
  <div id="jumbotron" class="red">
+  <div class="side-nav ">
+    <ul>
+      <li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
+      <li class="my-2"><a href="#"><i class="fa-solid fa-book-open"></i></a></li>
+      <li><a href="#"><i class="fa-solid fa-gear"></i></a></li>
+    </ul>
+  </div>
   <div class="jumbo-container">
     <div class="cta w-100 h-100  d-flex flex-column  justify-content-center align-items-center ">
-      <h2>Key to your succes</h2>
+      <h2>Key to your success</h2>
       <p class=" text-center ">EduPrime is the most versatile WordPress theme for educational purposes, showcasing universities, courses, secondary schools etc.</p>
       <div class="cta-btn d-flex my-4 ">
         <button class=" btn btn-secondary yellow-btn mx-4 ">Search courses</button>
@@ -17,16 +24,43 @@ export default {
       </div>
     </div>
   </div>
+  <div class="wave">
+    <img src="/public/edu/img/Wave-1.png" alt="">
+  </div>
  </div> 
 </template>
 
 <style lang="scss" scoped>
   #jumbotron{
+    position: relative;
     color: white;
     height: 700px;
     width: 100%;
     background-image: url(/public/edu/img/theme_slider2_bg-1.jpg); 
+    background-size: cover;
+    background-repeat: no-repeat;
     box-shadow: inset 0 0 0 99999px #e56767c7;
+    .side-nav{
+      height: auto;
+      width: 30px;
+      background-color: var(--yellow-btn);
+      position: absolute;
+      left: 0;
+      top: 40%;
+      border-radius: 0.2rem;
+      ul{
+        position: relative;
+        right: 25px;
+        top: 5px;
+
+        li{
+          a{
+            color: white;
+          }
+  
+        }
+      }
+    }
     .jumbo-container{
       margin: 0 auto;
       width: 40%;
@@ -48,8 +82,15 @@ export default {
         }
         .cta-btn button:last-child {
           background-color: white;
+          &:hover{
+            background-color: #e56767c7;
+          }
         }
       }
+    }
+    .wave{
+      position: absolute;
+      bottom: 0;
     }
   }
 
