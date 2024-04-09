@@ -45,7 +45,12 @@ export default {
             <li v-for="link in store.footerMenu.networking" class="mb-3"><a :href="link.link">{{ link.name }}</a></li>
           </ul>
         </div>
-        <div class="col">a</div>
+        <div class="col">
+          <div class="searchbar">
+            <input type="text" placeholder="Search ...">
+            <button><i class="fa-solid fa-magnifying-glass"></i></button>
+          </div>
+        </div>
       </div>
     </div>
   </footer>
@@ -69,10 +74,14 @@ footer {
     ul {
 
       li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         background-color: transparent;
         border-radius: 50%;
         border: 2px solid var(--yellow-btn);
-        padding: 10px 16px;
+        width: 50px;
+        aspect-ratio: 1;
         margin-right: 1.2rem;
 
         a {
@@ -85,6 +94,30 @@ footer {
   a,
   p {
     color: var(--white-text);
+  }
+
+  .searchbar {
+    position: relative;
+
+    input {
+      border-radius: 2rem;
+      border: none;
+      padding: 0 30px;
+      width: 20rem;
+      height: 4rem;
+    }
+
+    button {
+      background-color: var(--yellow-btn);
+      border-radius: 50%;
+      border: none;
+      width: 64px;
+      aspect-ratio: 1;
+      color: white;
+      position: absolute;
+      right: -20px;
+      top: 0;
+    }
   }
 }
 </style>
