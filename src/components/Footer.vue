@@ -12,13 +12,14 @@ export default {
 
 <template>
   <footer>
-    <div class="container">
-      <div class=" row row-cols-4 d-flex justify-content-between  ">
+    <div class="container d-flex  align-items-center  h-100 ">
+      <div class="  row row-cols-4 d-flex justify-content-between  ">
+
         <div class="col ">
           <div class="logo">
             <img src="/edu/img/theme_eduprime_logo.png" alt="">
           </div>
-          <p class=" my-4 ">
+          <p class=" my-5 ">
             Edu prime is the most versatile WordPress theme for educational purposes, showcasing universities, courses,
             secondary schools etc.
           </p>
@@ -30,10 +31,20 @@ export default {
             </ul>
           </div>
         </div>
-        <div class="col">
 
+        <div class="col get-EduPrime">
+          <ul>
+            <h4 class="mb-5">Get EduPrime</h4>
+            <li v-for="link in store.footerMenu.eduPrime" class="mb-3"><a :href="link.link">{{ link.name }}</a></li>
+          </ul>
         </div>
-        <div class="col">a</div>
+
+        <div class="col">
+          <ul>
+            <h4 class="mb-5">Networking</h4>
+            <li v-for="link in store.footerMenu.networking" class="mb-3"><a :href="link.link">{{ link.name }}</a></li>
+          </ul>
+        </div>
         <div class="col">a</div>
       </div>
     </div>
@@ -43,6 +54,7 @@ export default {
 
 <style lang="scss" scoped>
 footer {
+  color: white;
   height: 520px;
   background-color: var(--primary-color);
 
@@ -55,7 +67,6 @@ footer {
     right: 30px;
 
     ul {
-      list-style: none;
 
       li {
         background-color: transparent;
@@ -69,6 +80,11 @@ footer {
         }
       }
     }
+  }
+
+  a,
+  p {
+    color: var(--white-text);
   }
 }
 </style>
