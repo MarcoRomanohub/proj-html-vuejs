@@ -89,31 +89,31 @@ export const store = reactive({
   },
   categories: [
     {
-      name: 'Economy',
+      name: 'ECONOMY',
       link: '#'
     },
     {
-      name: 'Design',
+      name: 'DESIGN',
       link: '#'
     },
     {
-      name: 'Coaching',
+      name: 'COACHING',
       link: '#'
     },
     {
-      name: 'Business',
+      name: 'BUSINESS',
       link: '#'
     },
     {
-      name: 'Medicine',
+      name: 'MEDICINE',
       link: '#'
     },
     {
-      name: 'Law',
+      name: 'LAW',
       link: '#'
     },
     {
-      name: 'Fitness',
+      name: 'FITNESS',
       link: '#'
     },
   ]

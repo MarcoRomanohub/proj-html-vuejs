@@ -13,6 +13,16 @@ data() {
 <template>
   <footer>
     <div class="container d-flex  align-items-center  h-100 ">
+      <div class="themes-btn d-flex flex-column ">
+        <button class="btn btn-dark mb-3">
+          <img src="/public/edu/svg/svg-3.svg" alt="">
+          Purchase Theme
+        </button>
+        <button class="btn btn-dark ">
+          <img src="/public/edu/svg/svg-2.svg" alt="">  
+          Related Themes
+        </button>
+      </div>
       <div class="  row row-cols-4 d-flex justify-content-between  ">
 
         <div class="col ">
@@ -46,20 +56,22 @@ data() {
           </ul>
         </div>
 
-        <div class="col">
+        <div class="col d-flex flex-column  ">
           <div class="searchbar">
             <input type="text" placeholder="Search ...">
             <button><i class="fa-solid fa-magnifying-glass"></i></button>
           </div>
           <div class="categories d-flex flex-column  align-items-end">
-            <h6 class="my-5">Search Categories</h6>
+            <h6 class="mt-5 mb-3">Search Categories</h6>
             <div class="categories-btn">
               <ul class=" d-flex flex-wrap justify-content-end  ">
                 <li v-for="(link, index) in store.categories" :key="index" class="btn btn-outline-secondary m-1  "><a :href="link.link">{{ link.name }}</a></li>
               </ul>
             </div>
           </div>
+          <p>ModelTheme. All rights reserved.</p>
         </div>
+
       </div>
     </div>
   </footer>
@@ -71,7 +83,24 @@ footer {
   color: white;
   height: 520px;
   background-color: var(--primary-color);
+  position: relative;
 
+  .themes-btn{
+    position: absolute;
+    left: 30px;
+    bottom: 30px;
+    button{
+      background-color: #454545;
+      color: #8B8B8A;
+      border: none;
+      width: 140px;
+      height: 30px;
+      font-size: 0.5rem;
+      img{
+        width: 15px;
+      }
+    }
+  }
   .logo {
     width: 300px;
   }
@@ -130,11 +159,17 @@ footer {
   }
   .categories{
     li {
-      font-size: 0.5rem;
+      font-size: 0.7rem;
     }
     .btn{
       border-radius: 2rem;
       border-color: white;
+    }
+  }
+  .col:last-child{
+    p{
+      color: #E9D758;
+      text-align: end;
     }
   }
 }
