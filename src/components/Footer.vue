@@ -1,11 +1,11 @@
 <script>
 import { store } from '../data/store'
 export default {
-  data() {
-    return {
-      store
-    }
+data() {
+  return {
+    store
   }
+}
 }
 
 </script>
@@ -35,20 +35,29 @@ export default {
         <div class="col get-EduPrime">
           <ul>
             <h4 class="mb-5">Get EduPrime</h4>
-            <li v-for="link in store.footerMenu.eduPrime" class="mb-3"><a :href="link.link">{{ link.name }}</a></li>
+            <li v-for="(link, index) in store.footerMenu.eduPrime" :key="index" class="mb-3"><a :href="link.link">{{ link.name }}</a></li>
           </ul>
         </div>
 
         <div class="col">
           <ul>
             <h4 class="mb-5">Networking</h4>
-            <li v-for="link in store.footerMenu.networking" class="mb-3"><a :href="link.link">{{ link.name }}</a></li>
+            <li v-for="(link, index) in store.footerMenu.networking" :key="index" class="mb-3"><a :href="link.link">{{ link.name }}</a></li>
           </ul>
         </div>
+
         <div class="col">
           <div class="searchbar">
             <input type="text" placeholder="Search ...">
             <button><i class="fa-solid fa-magnifying-glass"></i></button>
+          </div>
+          <div class="categories d-flex flex-column  align-items-end">
+            <h6 class="my-5">Search Categories</h6>
+            <div class="categories-btn">
+              <ul class=" d-flex flex-wrap justify-content-end  ">
+                <li v-for="(link, index) in store.categories" :key="index" class="btn btn-outline-secondary m-1  "><a :href="link.link">{{ link.name }}</a></li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -117,6 +126,15 @@ footer {
       position: absolute;
       right: -20px;
       top: 0;
+    }
+  }
+  .categories{
+    li {
+      font-size: 0.5rem;
+    }
+    .btn{
+      border-radius: 2rem;
+      border-color: white;
     }
   }
 }

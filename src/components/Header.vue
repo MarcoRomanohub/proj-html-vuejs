@@ -19,7 +19,7 @@ export default {
       </div>
       <div class="menu d-flex ">
         <ul class=" d-flex ">
-          <li v-for="link in store.headerMenu"><a :href="link.link">{{ link.name }}</a></li>
+          <li v-for="(link, index) in store.headerMenu" :key="index"><a :href="link.link">{{ link.name }}</a></li>
         </ul>
         <button class=" btn btn-secondary   ">VIEW COURSES</button>
       </div>

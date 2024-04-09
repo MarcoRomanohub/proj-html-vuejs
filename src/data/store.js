@@ -86,5 +86,35 @@ export const store = reactive({
         link: '#'
       },
     ]
-  }
+  },
+  categories: [
+    {
+      name: 'Economy',
+      link: '#'
+    },
+    {
+      name: 'Design',
+      link: '#'
+    },
+    {
+      name: 'Coaching',
+      link: '#'
+    },
+    {
+      name: 'Business',
+      link: '#'
+    },
+    {
+      name: 'Medicine',
+      link: '#'
+    },
+    {
+      name: 'Law',
+      link: '#'
+    },
+    {
+      name: 'Fitness',
+      link: '#'
+    },
+  ]
 })
