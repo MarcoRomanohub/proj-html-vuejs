@@ -23,7 +23,7 @@ data() {
           Related Themes
         </button>
       </div>
-      <div class="  row row-cols-4 d-flex justify-content-between  ">
+      <div class=" ms-5 row row-cols d-flex    ">
 
         <div class="col ">
           <div class="logo">
@@ -42,14 +42,14 @@ data() {
           </div>
         </div>
 
-        <div class="col get-EduPrime">
+        <div class="col ms-5 get-EduPrime">
           <ul>
             <h4 class="mb-5">Get EduPrime</h4>
             <li v-for="(link, index) in store.footerMenu.eduPrime" :key="index" class="mb-3"><a :href="link.link">{{ link.name }}</a></li>
           </ul>
         </div>
 
-        <div class="col">
+        <div class="col me-5  networking">
           <ul>
             <h4 class="mb-5">Networking</h4>
             <li v-for="(link, index) in store.footerMenu.networking" :key="index" class="mb-3"><a :href="link.link">{{ link.name }}</a></li>
@@ -90,12 +90,14 @@ footer {
     left: 30px;
     bottom: 30px;
     button{
+      padding-right: 35px;
       background-color: #454545;
       color: #8B8B8A;
       border: none;
-      width: 140px;
-      height: 30px;
-      font-size: 0.5rem;
+      width: 155px;
+      height: 35px;
+      font-size: 0.7rem;
+      
       img{
         width: 15px;
       }
