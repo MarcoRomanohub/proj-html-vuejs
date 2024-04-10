@@ -80,6 +80,19 @@
 
       </div>
     </div>
+    <div class="subscribe">
+      <div class="row row-cols-2 ">
+        <div class="col d-flex justify-content-end ">
+          <h3><strong>Subscribe Now To Our Newsletter!</strong></h3>
+        </div>
+        <div class="col d-flex align-items-center ">
+          <div class="searchbar ms-5 ">
+            <input type="text" placeholder="Email address ...">
+            <button><i class="fa-solid fa-paper-plane"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 </template>
 
@@ -143,6 +156,40 @@
       .row.fees{
         margin-top: 100px;
       }
+    }
+    .subscribe{
+      color: white;
+      width: 100%;
+      height: 200px;
+      background-color: var(--primary-color);
+      h3{
+        line-height: 200px;
+        font-size: 2.5rem;
+      }
+    .searchbar {
+      position: relative;
+      // line-height: 200px;
+
+    input {
+      border-radius: 2rem;
+      border: none;
+      padding: 0 30px;
+      width: 20rem;
+      height: 4rem;
+    }
+
+    button {
+      background-color: var(--yellow-btn);
+      border-radius: 50%;
+      border: none;
+      width: 64px;
+      aspect-ratio: 1;
+      color: white;
+      position: absolute;
+      right: -10px;
+      top: 0;
+    }
+  }
     }
   }
 </style>
