@@ -52,8 +52,31 @@
           </div>
         
         </div>
-
+        <div class="row row-cols mb-5  fees ">
         
+          <div class="col">
+            <div class="img">
+              <img src="/public/edu/img/Girl-Illustration.png" alt="">
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="small-img mb-3">
+              <img src="/public/edu/img/Exam-icon-1.png" alt="">
+            </div>
+            <div class="text ">
+              <h2><strong>Variable fees for international students</strong></h2>
+              <p class=" my-5">
+                 EduPrime has gathered teachers from around the globe to brainstorm in order to facilitate the evaluation of our students. Every teacher from our university has an influence on how students are evaluated at his/her subject.
+              </p>
+              <button class=" btn btn-secondary   ">List of Fees</button>
+            </div>
+          </div>
+          
+        
+        </div>
+
+
 
       </div>
     </div>
@@ -111,12 +134,14 @@
             }
             .btn {
               background-color: var(--primary-color);
-              width: 240px;
-              height: 65px;
+              padding: 22px 45px;
             
             }
           }
         }
+      }
+      .row.fees{
+        margin-top: 100px;
       }
     }
   }
