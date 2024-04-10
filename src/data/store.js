@@ -138,5 +138,22 @@ export const store = reactive({
       name: 'Graphic Design',
       image: 'public/edu/img/Palette-tabs-v2.png'
     },
+  ],
+  upcomingEvents: [
+    {
+      title: 'Coaching Sessions',
+      date: '20 May 21:30 PM',
+      info: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, natus.'
+    },
+    {
+      title: 'Coaching Sessions',
+      date: '24 Mar 18:00 PM',
+      info: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, natus.'
+    },
+    {
+      title: 'Coaching Sessions',
+      date: '12 Feb 13:30 PM',
+      info: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, natus.'
+    },
   ]
 })

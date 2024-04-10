@@ -1,6 +1,12 @@
  <script>
- export default {
+  import {store} from '../../data/store'
  
+ export default {
+  data(){
+      return{
+        store
+      }
+    }
  }
  </script>
 
@@ -43,24 +49,29 @@
         <div class="icon mb-4 mt-5 "><img src="/public/edu/img/upcoming-events-calendar-icon.png" alt=""></div>
         <h2>Upcoming Events</h2>
       </div>
-      <div class="row row-cols-3 events">
-        <div class="col">
+      <div class="row row-cols-3 events mt-5 ms-3 ">
+        
+        <div v-for="(event, index) in store.upcomingEvents" :key="index" class="col">
           <div class="card-event text-center d-flex flex-column align-items-center justify-content-center pt-5   ">
-            <h3>Coaching Sessions</h3>
+            <h3>{{ event.title }}</h3>
             <p class="date">
-              20 May 21:30 PM
+              {{event.date}}
             </p>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, natus.
+              {{event.info}}
             </p>
             <button class=" btn btn-secondary  ">+ Find More</button>
           </div>
         </div>
-        <div class="col"></div>
-        <div class="col"></div>
+     
       </div>
-    </div>
 
+      <div class="all-events-btn d-flex justify-content-center">
+        <button class=" btn btn-secondary yellow-btn mb-5  ">View All Events</button>
+      </div>
+
+    </div>
+    <img src="/public/edu/img/Wave-1.png" alt="">
 
    </section>
  </template>
@@ -68,7 +79,7 @@
  
  <style lang="scss" scoped>
   #uniYear{
-    height: 1500px;
+    height: 1600px;
     background-color: var(--primary-color);
     padding-top: 200px;
     color: white;
@@ -124,11 +135,15 @@
           box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
           position: relative;
           top: 5px;
-          border: none;
-          border-radius: 2rem;
           width: 130px;
           background-color: var(--primary-color);
         }
+      }
+    }
+    .all-events-btn{
+      margin-top: 100px;
+      button{
+        padding: 20px 40px;
       }
     }
   }
