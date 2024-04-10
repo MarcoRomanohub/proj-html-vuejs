@@ -54,6 +54,25 @@
       </div>
     </div>
 
+    <div class="container faculty">
+      <div class="row row-cols-2 ">
+        <div class="col d-flex justify-content-center ">
+          <div class="img">
+            <img src="/public/edu/img/Gavel-Illustration-e1556884768193.png" alt="">
+          </div>
+        </div>
+        <div class="col">
+          <div class="text">
+            <h3>Law Faculty</h3>
+            <p>
+              Learning from world-leading academics and practitioners, you'll not only receive an outstanding grounding in the teory of law, but you will be able to understand how those principles are applied in practice through a range of student-led activities and competitions. 
+            </p>
+            <button class=" btn btn-secondary  ">Read more</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
     
 
   </section>
@@ -72,9 +91,20 @@
     h2{
         font-size: 3.7rem;
       }
+    h3{
+        font-size: 3rem;
+      }
+      h2, h3{
+        color: var(--blu-text);
+      }
       p{
         color: #454545;
         margin: 40px 0;
+      }
+      .btn{
+        border: none;
+        border-radius: 2rem;
+        padding: 1rem 1.8rem;
       }
   .container.courses{
     margin-top: 130px;
@@ -87,9 +117,7 @@
 
       .btn {
         background-color: var(--yellow-btn);
-        border: none;
-        border-radius: 2rem;
-        padding: 1rem 1.8rem;
+        
       }
     }
   }
@@ -108,6 +136,16 @@
           color: var(--primary-color);
         }
       }
+    }
+  }
+  .container.faculty{
+    margin-top: 100px;
+    p{
+      color: #8B8B8A;
+    }
+    .btn{
+      padding: 20px 45px;
+      background-color: var(--primary-color);
     }
   }
 }
