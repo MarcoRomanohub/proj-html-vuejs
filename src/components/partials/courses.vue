@@ -1,6 +1,11 @@
   <script>
+  import {store} from '../../data/store'
   export default {
-  
+    data(){
+      return{
+        store
+      }
+    }
   }
   </script>
 
@@ -41,6 +46,12 @@
     <div class="container faculties text-center ">
       <h2>Faculties available at EduPrime</h2>
       <p>A single university with a load of courses, tailored <br> to satisfy any sudent's needs.</p>
+      <div class=" d-flex justify-content-center row row-cols-5 ">
+        <div v-for="(faculty, index) in store.faculties"  :key="index" class="col d-flex flex-column align-items-center justify-content-center ">
+          <img :src="faculty.image" alt="">
+          <h5>{{ faculty.name }}</h5>
+        </div>
+      </div>
     </div>
 
     
@@ -84,6 +95,20 @@
   }
   .container.faculties{
     margin-top: 200px;
+    .row{
+      .col{
+        width: 240px;
+        height: 200px;
+        border: 1px solid rgba(0, 0, 0, 0.070);
+        img{
+          width: 90px;
+          margin-bottom: 15px;
+        }
+        h5{
+          color: var(--primary-color);
+        }
+      }
+    }
   }
 }
 </style>

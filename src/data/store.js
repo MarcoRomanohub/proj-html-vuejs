@@ -116,5 +116,27 @@ export const store = reactive({
       name: 'FITNESS',
       link: '#'
     },
+  ],
+  faculties: [
+    {
+      name: 'Law Faculty',
+      image: 'public/edu/img/Gavel-v2.png'
+    },
+    {
+      name: 'Economy',
+      image: 'public/edu/img/Coins-tabs-v2.png'
+    },
+    {
+      name: 'Medicine',
+      image: 'public/edu/img/Medicine-tabs-v2.png'
+    },
+    {
+      name: 'Computer Scienze',
+      image: 'public/edu/img/Computer-tabs-v2.png'
+    },
+    {
+      name: 'Graphic Design',
+      image: 'public/edu/img/Palette-tabs-v2.png'
+    },
   ]
 })
