@@ -71,7 +71,10 @@
       </div>
 
     </div>
-    <img src="/public/edu/img/Wave-1.png" alt="">
+
+    <div class="bg-wave">
+      <img src="/public/edu/svg/svg-1.svg" alt="">
+    </div>
 
    </section>
  </template>
@@ -145,6 +148,11 @@
       button{
         padding: 20px 40px;
       }
+    }
+    .bg-wave{
+      position: relative;
+      top: 90px;
+      width: max-content;
     }
   }
  </style>

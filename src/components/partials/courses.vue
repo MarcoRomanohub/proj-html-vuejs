@@ -73,7 +73,9 @@
       </div>
     </div>
 
-    <img src="/public/edu/svg/svg-0.svg" alt="">
+    <div class="bg-wave">
+      <img src="/public/edu/svg/svg-0.svg" alt="">
+    </div>
 
   </section>
 
@@ -147,6 +149,9 @@
       padding: 20px 45px;
       background-color: var(--primary-color);
     }
+  }
+  .bg-wave{
+    width: max-content
   }
 }
 </style>

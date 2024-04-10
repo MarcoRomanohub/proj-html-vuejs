@@ -155,5 +155,31 @@ export const store = reactive({
       date: '12 Feb 13:30 PM',
       info: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, natus.'
     },
+  ],
+  latestCourses: [
+    {
+      icon: 'public/edu/img/Decisions-icon.png',
+      name: 'Make Better Decisions',
+      teacher: 'James Colins.',
+      price: '$21.00'
+    },
+    {
+      icon: 'public/edu/img/Speaker-icon.png',
+      name: 'How to be a speaker',
+      teacher: 'James Colins.',
+      price: 'Free'
+    },
+    {
+      icon: 'public/edu/img/Network-icon.png',
+      name: 'Network introductions',
+      teacher: 'James Colins.',
+      price: 'Free'
+    },
+    {
+      icon: 'public/edu/img/Brand-icon.png',
+      name: 'Brand Management',
+      teacher: 'James Colins.',
+      price: 'Free'
+    },
   ]
 })

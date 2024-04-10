@@ -2,12 +2,14 @@
 import { store } from '../data/store'
 import courses from './partials/courses.vue'
 import jumbotron from './partials/jumbotron.vue'
+import latestCourses from './partials/latestCourses.vue'
 import uniYear from './partials/uniYear.vue'
 export default {
   components:{
     jumbotron,
     courses,
-    uniYear
+    uniYear,
+    latestCourses
   },
   data() {
     return {
@@ -23,7 +25,7 @@ export default {
     <jumbotron />
     <courses />
     <uniYear />
-    <section></section>
+    <latestCourses />
     <section></section>
     <section></section>
   </main>

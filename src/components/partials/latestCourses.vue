@@ -1,0 +1,76 @@
+  <script>
+  import {store} from '../../data/store'
+
+  export default {
+    data(){
+      return{
+        store
+      }
+    }
+  }
+  </script>
+
+<template>
+  <section id="latestCourses">
+    <div class="container ">
+      <div class="latest-courses">
+        <h2>Latest Courses</h2>
+        <div class="courses-cards mt-5">
+          <div class="row row-cols">
+
+            <div v-for="(course, index) in store.latestCourses" :key="index" class="col text-center d-flex flex-column align-items-center justify-content-center me-5">
+              <div class="icon my-4"><img :src="course.icon" alt=""></div>
+              <h5>{{course.name}}</h5>
+              <p>Teacher: <strong>{{ course.teacher }}</strong></p>
+              <p>Price: <strong>{{course.price}}</strong></p>
+              <button class=" btn btn-secondary  "><strong>View Course</strong></button>
+            </div>
+      
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</template>
+
+
+<style lang="scss" scoped>
+  #latestCourses{
+    .latest-courses{
+      margin-top: 170px;
+      h2{
+          font-size: 3.4rem;
+          color: var(--blu-text);
+        }
+        .courses-cards{
+          .row{
+            .col{
+              width: 270px;
+              aspect-ratio: 1;
+              background-color: white;
+              box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.067);
+              .icon{
+                width: 80px;
+              }
+              h5{
+                color: var(--blu-text);
+                font-weight: bold;
+              }
+              p{
+                font-size: 0.8rem;
+              }
+              .btn{
+                box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+                position: relative;
+                top: 20px;
+                width: 180px;
+                height: 50px;
+                background-color: var(--primary-color);
+              }
+            }
+          }
+        }
+    }
+  }
+</style>
