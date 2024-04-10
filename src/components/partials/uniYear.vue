@@ -10,7 +10,7 @@
     <div class="container">
       <div class="title d-flex flex-column align-items-center ">
         <div class="icon mb-4"><img src="/public/edu/img/Clock-and-Bell.png" alt=""></div>
-        <h2>University Year</h2>
+        <h2 class="bg_red">University Year</h2>
       </div>
       <div class="timeline">
         <div class="top-text">
@@ -39,6 +39,26 @@
           </div>
         </div>
       </div>
+      <div class="title d-flex flex-column align-items-center ">
+        <div class="icon mb-4 mt-5 "><img src="/public/edu/img/upcoming-events-calendar-icon.png" alt=""></div>
+        <h2>Upcoming Events</h2>
+      </div>
+      <div class="row row-cols-3 events">
+        <div class="col">
+          <div class="card-event text-center d-flex flex-column align-items-center justify-content-center pt-5   ">
+            <h3>Coaching Sessions</h3>
+            <p class="date">
+              20 May 21:30 PM
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, natus.
+            </p>
+            <button class=" btn btn-secondary  ">+ Find More</button>
+          </div>
+        </div>
+        <div class="col"></div>
+        <div class="col"></div>
+      </div>
     </div>
 
 
@@ -48,10 +68,13 @@
  
  <style lang="scss" scoped>
   #uniYear{
-    height: 1000px;
+    height: 1500px;
     background-color: var(--primary-color);
     padding-top: 200px;
     color: white;
+    .bg_red{
+      background-color: rgba(203, 2, 2, 0.664)
+    }
     p{
       color: var(--white-text);
     }
@@ -61,7 +84,6 @@
       }
       h2{
         font-size: 3.4rem;
-        background-color: rgba(203, 2, 2, 0.664);
       }
     }
     .timeline{
@@ -80,6 +102,32 @@
             position: relative;
             right: 200px;
           }
+        }
+      }
+    }
+    .events{
+      .card-event{
+        width: 360px;
+        height: 200px;
+        background-color: white;
+        border-radius: 1.1rem;
+        h3{
+          color: var(--blu-text);
+        }
+        p{
+          color: #8B8B8A;
+          &.date{
+            font-size: 0.8rem;
+          }
+        }
+        .btn{
+          box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+          position: relative;
+          top: 5px;
+          border: none;
+          border-radius: 2rem;
+          width: 130px;
+          background-color: var(--primary-color);
         }
       }
     }
