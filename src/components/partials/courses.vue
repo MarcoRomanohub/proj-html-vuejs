@@ -73,7 +73,7 @@
       </div>
     </div>
 
-    
+    <img src="/public/edu/svg/svg-0.svg" alt="">
 
   </section>
 
