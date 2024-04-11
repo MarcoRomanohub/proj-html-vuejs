@@ -36,10 +36,7 @@ export default {
     color: white;
     height: 700px;
     width: 100%;
-    background-image: url(/public/edu/img/theme_slider2_bg-1.jpg); 
-    background-size: cover;
-    background-repeat: no-repeat;
-    box-shadow: inset 0 0 0 99999px #e56767c7;
+
     .side-nav{
       height: auto;
       width: 30px;
