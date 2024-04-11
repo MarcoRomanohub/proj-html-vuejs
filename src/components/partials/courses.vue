@@ -160,7 +160,7 @@
         width: 240px;
         height: 200px;
         border: 1px solid rgba(0, 0, 0, 0.070);
-    
+        cursor: pointer;
         img{
           width: 90px;
           margin-bottom: 15px;

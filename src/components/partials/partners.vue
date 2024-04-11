@@ -45,7 +45,10 @@
       .col{
         img{
           height: 50px;
-
+          filter: opacity(30%);
+          &:hover{
+            filter: opacity(100%);
+          }
         }
       }
     }

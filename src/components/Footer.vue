@@ -65,7 +65,7 @@ data() {
             <h6 class="mt-5 mb-3">Search Categories</h6>
             <div class="categories-btn">
               <ul class=" d-flex flex-wrap justify-content-end  ">
-                <li v-for="(link, index) in store.categories" :key="index" class="btn btn-outline-secondary m-1  "><a :href="link.link">{{ link.name }}</a></li>
+                <li v-for="(link, index) in store.categories" :key="index" class="btn btn-outline-secondary hover-btn1 m-1  "><a :href="link.link">{{ link.name }}</a></li>
               </ul>
             </div>
           </div>
@@ -130,13 +130,17 @@ footer {
       }
     }
   }
-
+  .get-EduPrime, .networking{
+    a{
+      &:hover{
+        color: var(--yellow-btn);
+    }
+    }
+  }
   a,
   p {
     color: var(--white-text);
-    &:hover{
-        color: var(--yellow-btn);
-    }
+    
   }
 
   .searchbar {
