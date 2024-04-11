@@ -165,7 +165,7 @@ footer {
     }
     .btn{
       border-radius: 2rem;
-      border-color: white;
+      border: 1px solid white;
     }
   }
   .col:last-child{
