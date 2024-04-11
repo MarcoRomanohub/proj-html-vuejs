@@ -10,3 +10,30 @@
   border: none;
   border-radius: 2rem;
 }
+
+.hover-btn1 {
+  &:hover {
+    background-color: var(--yellow-btn) !important;
+  }
+}
+
+.hover-btn2 {
+  &:hover {
+    background-color: var(--primary-color);
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.067);
+
+  }
+}
+
+.hover-btn3 {
+  &:hover {
+    background-color: red !important;
+  }
+}
+
+.hover-btn4 {
+  &:hover {
+    background-color: white !important;
+    color: var(--primary-color);
+  }
+}

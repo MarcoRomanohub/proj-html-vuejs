@@ -97,7 +97,7 @@ footer {
       width: 155px;
       height: 35px;
       font-size: 0.7rem;
-      
+      font-weight: 400;
       img{
         width: 15px;
       }
@@ -134,6 +134,9 @@ footer {
   a,
   p {
     color: var(--white-text);
+    &:hover{
+        color: var(--yellow-btn);
+    }
   }
 
   .searchbar {
@@ -155,7 +158,7 @@ footer {
       aspect-ratio: 1;
       color: white;
       position: absolute;
-      right: -20px;
+      right: -10px;
       top: 0;
     }
   }

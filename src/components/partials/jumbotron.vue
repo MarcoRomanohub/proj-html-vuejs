@@ -19,7 +19,7 @@ export default {
       <h2>Key to your success</h2>
       <p class=" text-center ">EduPrime is the most versatile WordPress theme for educational purposes, showcasing universities, courses, secondary schools etc.</p>
       <div class="cta-btn d-flex my-4 ">
-        <button class=" btn btn-secondary yellow-btn mx-4 ">Search courses</button>
+        <button class=" btn btn-secondary yellow-btn hover-btn2 mx-4 ">Search courses</button>
         <button class=" btn btn-outline-danger ">Apply for university</button>
       </div>
     </div>
@@ -91,6 +91,8 @@ export default {
     .wave{
       position: absolute;
       bottom: 0;
+      width: max-content;
+      
     }
   }
 

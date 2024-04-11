@@ -23,7 +23,7 @@
               <h5>{{course.name}}</h5>
               <p>Teacher: <strong>{{ course.teacher }}</strong></p>
               <p>Price: <strong>{{course.price}}</strong></p>
-              <button class=" btn btn-secondary  "><strong>View Course</strong></button>
+              <button class=" btn btn-secondary hover-btn4"><strong>View Course</strong></button>
             </div>
       
           </div>
@@ -41,7 +41,7 @@
               <p class=" my-5">
                  EduPrime has gathered teachers from around the globe to brainstorm in order to facilitate the evaluation of our students. Every teacher from our university has an influence on how students are evaluated at his/her subject.
               </p>
-              <button class=" btn btn-secondary   ">Discover the Method</button>
+              <button class=" btn btn-secondary hover-btn1  ">Discover the Method</button>
             </div>
           </div>
           
@@ -69,7 +69,7 @@
               <p class=" my-5">
                  EduPrime has gathered teachers from around the globe to brainstorm in order to facilitate the evaluation of our students. Every teacher from our university has an influence on how students are evaluated at his/her subject.
               </p>
-              <button class=" btn btn-secondary   ">List of Fees</button>
+              <button class=" btn btn-secondary hover-btn1 ">List of Fees</button>
             </div>
           </div>
           
@@ -123,7 +123,7 @@
                 font-size: 0.8rem;
               }
               .btn{
-                box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+                box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.067);
                 position: relative;
                 top: 20px;
                 width: 180px;

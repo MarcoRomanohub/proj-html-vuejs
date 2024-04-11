@@ -49,7 +49,7 @@
         <div class="icon mb-4 mt-5 "><img src="/public/edu/img/upcoming-events-calendar-icon.png" alt=""></div>
         <h2>Upcoming Events</h2>
       </div>
-      <div class="row row-cols-3 events mt-5 ms-3 ">
+      <div class="row row-cols-3 events mt-5 ms-4 ">
         
         <div v-for="(event, index) in store.upcomingEvents" :key="index" class="col">
           <div class="card-event text-center d-flex flex-column align-items-center justify-content-center pt-5   ">
@@ -60,14 +60,14 @@
             <p>
               {{event.info}}
             </p>
-            <button class=" btn btn-secondary  ">+ Find More</button>
+            <button class=" btn btn-secondary hover-btn1 ">+ Find More</button>
           </div>
         </div>
      
       </div>
 
       <div class="all-events-btn d-flex justify-content-center">
-        <button class=" btn btn-secondary yellow-btn mb-5  ">View All Events</button>
+        <button class=" btn btn-secondary yellow-btn hover-btn2 mb-5  ">View All Events</button>
       </div>
 
     </div>

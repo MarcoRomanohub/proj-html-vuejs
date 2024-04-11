@@ -19,9 +19,9 @@ export default {
       </div>
       <div class="menu d-flex ">
         <ul class=" d-flex ">
-          <li v-for="(link, index) in store.headerMenu" :key="index"><a :href="link.link">{{ link.name }}</a></li>
+          <li v-for="(link, index) in store.headerMenu" :key="index"><a :href="link.link"><strong>{{ link.name }}</strong></a></li>
         </ul>
-        <button class=" btn btn-secondary   ">VIEW COURSES</button>
+        <button class=" btn btn-secondary hover-btn4 "><strong>VIEW COURSES</strong></button>
       </div>
     </div>
   </header>
@@ -56,6 +56,9 @@ header {
     a {
       color: white;
       text-decoration: none;
+      &:hover{
+        color: var(--yellow-btn);
+      }
     }
   }
 

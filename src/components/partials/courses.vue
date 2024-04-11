@@ -3,10 +3,18 @@
   export default {
     data(){
       return{
-        store
+        store,
+
       }
+    },
+    methods:{
+    
+      
     }
+   
   }
+
+
   </script>
 
 <template>
@@ -26,7 +34,7 @@
             <p>
               At EduPrime, it doesn't matter what domain you wish to pursue a career in. Here you can find a course that satisfies your needs within a click away and applies for a course in a matter of minutes. EduPrime is ranked as the most versatile university in the world, thanks to the number of courses it provides. 
             </p>
-            <button class=" btn btn-secondary   ">Browse trough courses</button>
+            <button class=" btn btn-secondary hover-btn3  ">Browse trough courses</button>
           </div>
         </div>
         
@@ -47,10 +55,12 @@
       <h2>Faculties available at EduPrime</h2>
       <p>A single university with a load of courses, tailored <br> to satisfy any sudent's needs.</p>
       <div class=" d-flex justify-content-center row row-cols-5 ">
-        <div v-for="(faculty, index) in store.faculties"  :key="index" class="col d-flex flex-column align-items-center justify-content-center ">
+
+        <div v-for="(faculty, index) in store.faculties"  :key="index" class="col d-flex flex-column align-items-center justify-content-center faculty-card">
           <img :src="faculty.image" alt="">
-          <h5>{{ faculty.name }}</h5>
+          <h5><strong>{{ faculty.name }}</strong></h5>
         </div>
+
       </div>
     </div>
 
@@ -67,7 +77,7 @@
             <p>
               Learning from world-leading academics and practitioners, you'll not only receive an outstanding grounding in the teory of law, but you will be able to understand how those principles are applied in practice through a range of student-led activities and competitions. 
             </p>
-            <button class=" btn btn-secondary  ">Read more</button>
+            <button class=" btn btn-secondary hover-btn1 ">Read more</button>
           </div>
         </div>
       </div>
@@ -126,10 +136,28 @@
   .container.faculties{
     margin-top: 200px;
     .row{
+      // .faculty-card.active{
+      //   background-color: var(--primary-color);
+      //   h5{
+      //     color: white;
+      //   }
+      //   img{
+      //     filter: brightness(3);
+      //   }
+      // }
       .col{
         width: 240px;
         height: 200px;
         border: 1px solid rgba(0, 0, 0, 0.070);
+        &:first-child{
+          background-color: var(--primary-color);
+          h5{
+            color: white;
+          }
+          img{
+            filter: brightness(3);
+          }
+        }
         img{
           width: 90px;
           margin-bottom: 15px;
@@ -137,6 +165,7 @@
         h5{
           color: var(--primary-color);
         }
+        
       }
     }
   }
