@@ -34,9 +34,9 @@ export default {
   #jumbotron{
     position: relative;
     color: white;
-    height: 700px;
+    height: 800px;
     width: 100%;
-
+    
     .side-nav{
       height: auto;
       width: 30px;
