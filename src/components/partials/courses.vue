@@ -4,11 +4,22 @@
     data(){
       return{
         store,
-
+        counter: 0,
       }
     },
     methods:{
     
+      nextPrev(isNext){
+
+        isNext ? this.counter++ : this.counter--;
+
+        if(this.counter === store.faculties.lenght){
+          this.counter = 0
+        }else if(this.counter < 0){
+          this.counter = store.faculties.lenght - 1;
+        }
+
+      },
       
     }
    
@@ -56,7 +67,7 @@
       <p>A single university with a load of courses, tailored <br> to satisfy any sudent's needs.</p>
       <div class=" d-flex justify-content-center row row-cols-5 ">
 
-        <div v-for="(faculty, index) in store.faculties"  :key="index" class="col d-flex flex-column align-items-center justify-content-center faculty-card">
+        <div v-for="(faculty, index) in store.faculties"  :key="index" @click="counter = index" class="col d-flex flex-column align-items-center justify-content-center faculty-card" :class="{'active': index === counter}">
           <img :src="faculty.image" alt="">
           <h5><strong>{{ faculty.name }}</strong></h5>
         </div>
@@ -68,12 +79,12 @@
       <div class="row row-cols-2 ">
         <div class="col d-flex justify-content-center ">
           <div class="img">
-            <img src="/public/edu/img/Gavel-Illustration-e1556884768193.png" alt="">
+            <img :src="store.faculties[counter].colorImage" alt="">
           </div>
         </div>
         <div class="col">
           <div class="text">
-            <h3>Law Faculty</h3>
+            <h3>{{store.faculties[counter].name}}</h3>
             <p>
               Learning from world-leading academics and practitioners, you'll not only receive an outstanding grounding in the teory of law, but you will be able to understand how those principles are applied in practice through a range of student-led activities and competitions. 
             </p>

@@ -119,24 +119,34 @@ export const store = reactive({
   ],
   faculties: [
     {
+      id: 1,
       name: 'Law Faculty',
-      image: 'public/edu/img/Gavel-v2.png'
+      image: 'public/edu/img/Gavel-v2.png',
+      colorImage: 'public/edu/img/Gavel-Illustration-e1556884768193.png'
     },
     {
+      id: 2,
       name: 'Economy',
-      image: 'public/edu/img/Coins-tabs-v2.png'
+      image: 'public/edu/img/Coins-tabs-v2.png',
+      colorImage: 'public/edu/img/Economy.png'
     },
     {
+      id: 3,
       name: 'Medicine',
-      image: 'public/edu/img/Medicine-tabs-v2.png'
+      image: 'public/edu/img/Medicine-tabs-v2.png',
+      colorImage: 'public/edu/img/Medicine.png'
     },
     {
+      id: 4,
       name: 'Computer Scienze',
-      image: 'public/edu/img/Computer-tabs-v2.png'
+      image: 'public/edu/img/Computer-tabs-v2.png',
+      colorImage: 'public/edu/img/Computer-Science.png'
     },
     {
+      id: 5,
       name: 'Graphic Design',
-      image: 'public/edu/img/Palette-tabs-v2.png'
+      image: 'public/edu/img/Palette-tabs-v2.png',
+      colorImage: 'public/edu/img/Graphic-Design.png'
     },
   ],
   upcomingEvents: [
