@@ -147,28 +147,20 @@
   .container.faculties{
     margin-top: 200px;
     .row{
-      // .faculty-card.active{
-      //   background-color: var(--primary-color);
-      //   h5{
-      //     color: white;
-      //   }
-      //   img{
-      //     filter: brightness(3);
-      //   }
-      // }
+      .faculty-card.active{
+        background-color: var(--primary-color);
+        h5{
+          color: white;
+        }
+        img{
+          filter: brightness(3);
+        }
+      }
       .col{
         width: 240px;
         height: 200px;
         border: 1px solid rgba(0, 0, 0, 0.070);
-        &:first-child{
-          background-color: var(--primary-color);
-          h5{
-            color: white;
-          }
-          img{
-            filter: brightness(3);
-          }
-        }
+    
         img{
           width: 90px;
           margin-bottom: 15px;
